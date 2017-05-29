@@ -1,8 +1,8 @@
-logs
+logs/
 *.log
-pids
-node_modules
-.npm
+pids/
+node_modules/
+.npm/
 *.dat
 *.DS_store
-config
+config/
