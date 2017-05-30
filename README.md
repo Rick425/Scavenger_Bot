@@ -176,4 +176,4 @@ With this `checkProgress()` function it ensures that the application will not br
 
 ###Game Completion
 
-Once a user finds a prize and confirms that the prize has been found, the bot will know that the prize no longer exists and will delete the associated location from the PRIZE_LOCATIONS object. Additionally, the bot will call the `resetWinner()` function, which resets everything but the `city` key the PROGRESS object.
+Once a user finds a prize and confirms that the prize has been found, the bot will know that the prize no longer exists and will delete the associated location from the PRIZE_LOCATIONS object. Additionally, the bot will call the `resetWinner()` function, which resets everything but the `city` key the PROGRESS object.# Scavenger_Bot
