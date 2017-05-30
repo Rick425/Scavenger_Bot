@@ -1,0 +1,48 @@
+2017-05-29T18:55:05.800084+00:00 heroku[web.1]: State changed from crashed to starting
+2017-05-29T18:55:07.114183+00:00 heroku[web.1]: Starting process with command `npm start`
+2017-05-29T18:55:09.940291+00:00 app[web.1]: 
+2017-05-29T18:55:09.940307+00:00 app[web.1]: > messenger-get-started@1.0.0 start /app
+2017-05-29T18:55:09.940308+00:00 app[web.1]: > node app.js
+2017-05-29T18:55:09.940309+00:00 app[web.1]: 
+2017-05-29T18:55:10.177820+00:00 app[web.1]: WARNING: NODE_ENV value of 'production' did not match any deployment config file names.
+2017-05-29T18:55:10.178935+00:00 app[web.1]: WARNING: See https://github.com/lorenwest/node-config/wiki/Strict-Mode
+2017-05-29T18:55:10.179524+00:00 app[web.1]: WARNING: No configurations found in configuration directory:/app/config
+2017-05-29T18:55:10.179539+00:00 app[web.1]: WARNING: To disable this warning set SUPPRESS_NO_CONFIG_WARNING in the environment.
+2017-05-29T18:55:10.741097+00:00 heroku[web.1]: Process exited with status 1
+2017-05-29T18:55:10.636830+00:00 app[web.1]: /app/node_modules/config/lib/config.js:181
+2017-05-29T18:55:10.636843+00:00 app[web.1]:     throw new Error('Configuration property "' + property + '" is not defined');
+2017-05-29T18:55:10.636844+00:00 app[web.1]:     ^
+2017-05-29T18:55:10.636844+00:00 app[web.1]: 
+2017-05-29T18:55:10.636845+00:00 app[web.1]: Error: Configuration property "appSecret" is not defined
+2017-05-29T18:55:10.636846+00:00 app[web.1]:     at Config.get (/app/node_modules/config/lib/config.js:181:11)
+2017-05-29T18:55:10.636847+00:00 app[web.1]:     at Object.<anonymous> (/app/app.js:19:10)
+2017-05-29T18:55:10.636848+00:00 app[web.1]:     at Module._compile (module.js:434:26)
+2017-05-29T18:55:10.636848+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:452:10)
+2017-05-29T18:55:10.636849+00:00 app[web.1]:     at Module.load (module.js:355:32)
+2017-05-29T18:55:10.636850+00:00 app[web.1]:     at Function.Module._load (module.js:310:12)
+2017-05-29T18:55:10.636850+00:00 app[web.1]:     at Function.Module.runMain (module.js:475:10)
+2017-05-29T18:55:10.636851+00:00 app[web.1]:     at startup (node.js:118:18)
+2017-05-29T18:55:10.636852+00:00 app[web.1]:     at node.js:952:3
+2017-05-29T18:55:10.656348+00:00 app[web.1]: 
+2017-05-29T18:55:10.661360+00:00 app[web.1]: npm ERR! Linux 3.13.0-112-generic
+2017-05-29T18:55:10.661747+00:00 app[web.1]: npm ERR! argv "/app/.heroku/node/bin/node" "/app/.heroku/node/bin/npm" "start"
+2017-05-29T18:55:10.661996+00:00 app[web.1]: npm ERR! node v4.1.2
+2017-05-29T18:55:10.663094+00:00 app[web.1]: npm ERR! npm  v2.14.4
+2017-05-29T18:55:10.663549+00:00 app[web.1]: npm ERR! messenger-get-started@1.0.0 start: `node app.js`
+2017-05-29T18:55:10.663817+00:00 app[web.1]: npm ERR! Exit status 1
+2017-05-29T18:55:10.663895+00:00 app[web.1]: npm ERR! 
+2017-05-29T18:55:10.664024+00:00 app[web.1]: npm ERR! Failed at the messenger-get-started@1.0.0 start script 'node app.js'.
+2017-05-29T18:55:10.663347+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2017-05-29T18:55:10.664141+00:00 app[web.1]: npm ERR! This is most likely a problem with the messenger-get-started package,
+2017-05-29T18:55:10.664261+00:00 app[web.1]: npm ERR! not with npm itself.
+2017-05-29T18:55:10.664355+00:00 app[web.1]: npm ERR! Tell the author that this fails on your system:
+2017-05-29T18:55:10.664457+00:00 app[web.1]: npm ERR!     node app.js
+2017-05-29T18:55:10.664580+00:00 app[web.1]: npm ERR! You can get their info via:
+2017-05-29T18:55:10.664690+00:00 app[web.1]: npm ERR!     npm owner ls messenger-get-started
+2017-05-29T18:55:10.664810+00:00 app[web.1]: npm ERR! There is likely additional logging output above.
+2017-05-29T18:55:10.667552+00:00 app[web.1]: 
+2017-05-29T18:55:10.667784+00:00 app[web.1]: npm ERR! Please include the following file with any support request:
+2017-05-29T18:55:10.667934+00:00 app[web.1]: npm ERR!     /app/npm-debug.log
+2017-05-29T18:55:10.756522+00:00 heroku[web.1]: State changed from starting to crashed
+2017-05-29T18:55:11.927796+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=evening-plateau-61096.herokuapp.com request_id=1f225d75-0ece-489c-bc2c-b876677d7b71 fwd="71.55.84.171" dyno= connect= service= status=503 bytes= protocol=https
+2017-05-29T18:55:13.281622+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=evening-plateau-61096.herokuapp.com request_id=36041fce-8b3a-4aaf-adf0-d3485aecc3b6 fwd="71.55.84.171" dyno= connect= service= status=503 bytes= protocol=https
